@@ -7,7 +7,7 @@
 	const closeMobile = () => (mobileOpen = false);
 </script>
 
-<header class="sticky top-0 z-50 bg-brand-navy border-b border-brand-steel/40 backdrop-blur-sm">
+<header class="sticky top-0 z-50 bg-white border-b border-gray-200">
 	<div class="section-container">
 		<nav class="flex items-center justify-between h-16" aria-label="Main navigation">
 			<!-- Logo -->
@@ -22,8 +22,8 @@
 					</div>
 				</div>
 				<div class="leading-tight">
-					<span class="font-bold text-white text-sm tracking-wide uppercase">Techni-Mold</span>
-					<span class="block text-brand-muted text-[10px] tracking-widest uppercase"
+					<span class="font-bold text-brand-navy text-sm tracking-wide uppercase">Techni-Mold</span>
+					<span class="block text-gray-400 text-[10px] tracking-widest uppercase"
 						>& Engineering</span
 					>
 				</div>
@@ -38,7 +38,7 @@
 							class="px-4 py-2 text-sm font-medium rounded-sm transition-colors duration-150
 								{$page.url.pathname === link.href
 								? 'text-brand-yellow'
-								: 'text-brand-muted hover:text-white'}"
+								: 'text-gray-500 hover:text-brand-navy'}"
 							aria-current={$page.url.pathname === link.href ? 'page' : undefined}
 						>
 							{link.label}
@@ -58,17 +58,17 @@
 				aria-label="Toggle navigation menu"
 			>
 				<span
-					class="block h-0.5 bg-white transition-transform duration-200 {mobileOpen
+					class="block h-0.5 bg-brand-navy transition-transform duration-200 {mobileOpen
 						? 'rotate-45 translate-y-2'
 						: ''}"
 				></span>
 				<span
-					class="block h-0.5 bg-white transition-opacity duration-200 {mobileOpen
+					class="block h-0.5 bg-brand-navy transition-opacity duration-200 {mobileOpen
 						? 'opacity-0'
 						: ''}"
 				></span>
 				<span
-					class="block h-0.5 bg-white transition-transform duration-200 {mobileOpen
+					class="block h-0.5 bg-brand-navy transition-transform duration-200 {mobileOpen
 						? '-rotate-45 -translate-y-2'
 						: ''}"
 				></span>

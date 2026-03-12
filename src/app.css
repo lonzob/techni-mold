@@ -25,7 +25,7 @@
 
 @layer components {
 	.btn-primary {
-		@apply inline-flex items-center justify-center gap-2 bg-brand-yellow text-brand-navy font-bold px-6 py-3 rounded-sm hover:bg-brand-yellow-dark transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-yellow;
+		@apply inline-flex items-center justify-center gap-2 bg-brand-yellow text-white font-bold px-6 py-3 rounded-sm hover:bg-brand-yellow-dark transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-yellow;
 	}
 	.btn-secondary {
 		@apply inline-flex items-center justify-center gap-2 border-2 border-brand-yellow text-brand-yellow font-bold px-6 py-3 rounded-sm hover:bg-brand-yellow hover:text-brand-navy transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-yellow;
