@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@theme {
+	/* Brand colors */
+	--color-brand-yellow: #f5c400;
+	--color-brand-yellow-dark: #d4a900;
+	--color-brand-navy: #0d1b2a;
+	--color-brand-charcoal: #1c2b3a;
+	--color-brand-steel: #2e4057;
+	--color-brand-light: #f4f6f8;
+	--color-brand-muted: #8a9bb0;
+
+	/* Typography */
+	--font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+	body {
+		@apply bg-brand-navy text-white font-sans antialiased;
+	}
+}
+
+@layer components {
+	.btn-primary {
+		@apply inline-flex items-center justify-center gap-2 bg-brand-yellow text-brand-navy font-bold px-6 py-3 rounded-sm hover:bg-brand-yellow-dark transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-yellow;
+	}
+	.btn-secondary {
+		@apply inline-flex items-center justify-center gap-2 border-2 border-brand-yellow text-brand-yellow font-bold px-6 py-3 rounded-sm hover:bg-brand-yellow hover:text-brand-navy transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-yellow;
+	}
+	.btn-ghost {
+		@apply inline-flex items-center justify-center gap-2 text-brand-muted font-semibold px-6 py-3 rounded-sm hover:text-white transition-colors duration-200;
+	}
+	.section-container {
+		@apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+	}
+	.section-padding {
+		@apply py-16 md:py-24;
+	}
+}

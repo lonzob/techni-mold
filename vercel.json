@@ -1,0 +1,12 @@
+{
+	"headers": [
+		{
+			"source": "/sitemap.xml",
+			"headers": [{ "key": "Cache-Control", "value": "public, s-maxage=86400" }]
+		},
+		{
+			"source": "/(.*)",
+			"headers": [{ "key": "X-DNS-Prefetch-Control", "value": "on" }]
+		}
+	]
+}
