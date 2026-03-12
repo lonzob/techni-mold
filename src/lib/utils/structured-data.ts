@@ -39,7 +39,12 @@ export function buildLocalBusinessSchema() {
 			'Insert Molding'
 		],
 		image: `${SITE.baseUrl}${SITE.defaultOgImage}`,
-		sameAs: []
+		sameAs: [
+			'https://www.techni-mold.com',
+			'https://www.linkedin.com/company/techni-mold-&-engineering-inc.',
+			'https://g.page/r/CUNzfSlQtKjaEBM/review',
+			'https://www.facebook.com/technimoldeng/'
+		]
 	});
 }
 

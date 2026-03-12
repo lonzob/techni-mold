@@ -1,6 +1,6 @@
 import type { PageLoad } from './$types';
 
-export const load: PageLoad = () => {
+export const load: PageLoad = ({ url }) => {
 	const imageModules = import.meta.glob(
 		'/static/images/work/*.{jpg,jpeg,png,gif,webp,JPG,JPEG,PNG,WEBP,GIF}',
 		{ eager: true }
@@ -15,7 +15,8 @@ export const load: PageLoad = () => {
 		meta: {
 			title: 'Our Work | Techni-Mold & Engineering',
 			description:
-				'Gallery of injection molded parts, mold tooling, and CNC machined components produced by Techni-Mold & Engineering in Gardena, CA.'
+				'Gallery of injection molded parts, mold tooling, and CNC machined components produced by Techni-Mold & Engineering in Gardena, CA.',
+			canonical: url.href
 		},
 		images
 	};

@@ -18,7 +18,7 @@ export const SITE = {
 		latitude: 33.8883,
 		longitude: -118.31
 	},
-	defaultOgImage: '/og-default.jpg',
+	defaultOgImage: '/images/tm-front.jpg',
 	foundingYear: '1966'
 } as const;
 
