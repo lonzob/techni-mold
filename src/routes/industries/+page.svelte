@@ -23,11 +23,13 @@
 </script>
 
 <!-- Hero -->
-<section class="bg-brand-section-alt border-b border-gray-200 py-16 md:py-20">
-	<div class="section-container">
+<section class="relative bg-brand-navy border-b border-gray-200 py-16 md:py-20 overflow-hidden">
+	<div class="absolute inset-0 bg-cover bg-top" style="background-image: url('/images/tm-front.jpg');" aria-hidden="true"></div>
+	<div class="absolute inset-0 bg-brand-navy/80" aria-hidden="true"></div>
+	<div class="section-container relative z-10">
 		<p class="text-brand-yellow font-bold text-xs uppercase tracking-widest mb-3">Who We Serve</p>
-		<h1 class="text-4xl md:text-5xl font-bold text-brand-navy mb-4">Industries Served</h1>
-		<p class="text-brand-muted text-lg max-w-2xl">
+		<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Industries Served</h1>
+		<p class="text-white/70 text-lg max-w-2xl">
 			{SITE.shortName} has manufactured plastic injection molded parts for virtually every industrial
 			sector. Our ISO compliant processes and NSF certification qualify us for the most demanding applications.
 		</p>

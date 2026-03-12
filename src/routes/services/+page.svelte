@@ -1,6 +1,7 @@
 <script lang="ts">
 	import SectionHeading from '$lib/components/ui/SectionHeading.svelte';
 	import { SERVICES, SITE } from '$lib/config/site';
+	import { Check } from 'lucide-svelte';
 
 	const icons: Record<string, string> = {
 		cad: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`,
@@ -106,14 +107,16 @@
 </script>
 
 <!-- Hero -->
-<section class="bg-brand-section-alt border-b border-gray-200 py-16 md:py-20">
-	<div class="section-container">
+<section class="relative bg-brand-navy border-b border-gray-200 py-16 md:py-20 overflow-hidden">
+	<div class="absolute inset-0 bg-cover bg-top" style="background-image: url('/images/15_sample.JPG');" aria-hidden="true"></div>
+	<div class="absolute inset-0 bg-brand-navy/80" aria-hidden="true"></div>
+	<div class="section-container relative z-10">
 		<p class="text-brand-yellow font-bold text-xs uppercase tracking-widest mb-3">What We Do</p>
-		<h1 class="text-4xl md:text-5xl font-bold text-brand-navy mb-4">
+		<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
 			Plastic Injection Molding Services<br />
 			<span class="text-brand-yellow">Southern California</span>
 		</h1>
-		<p class="text-brand-muted text-lg max-w-2xl">
+		<p class="text-white/70 text-lg max-w-2xl">
 			Full in-house capabilities from CAD design through production molding, CNC machining, EDM, and
 			secondary operations — all at our Gardena, CA facility.
 		</p>
@@ -142,7 +145,7 @@
 					<ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
 						{#each serviceDetails[service.id]?.capabilities ?? [] as cap}
 							<li class="flex items-start gap-2 text-sm text-brand-muted">
-								<span class="text-brand-yellow mt-0.5 shrink-0">✓</span>
+								<Check size={14} class="text-brand-yellow mt-0.5 shrink-0" />
 								{cap}
 							</li>
 						{/each}

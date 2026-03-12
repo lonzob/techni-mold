@@ -6,6 +6,7 @@ const pages = [
 	{ path: '/services', changefreq: 'monthly', priority: '0.9' },
 	{ path: '/industries', changefreq: 'monthly', priority: '0.8' },
 	{ path: '/about', changefreq: 'monthly', priority: '0.7' },
+	{ path: '/work', changefreq: 'monthly', priority: '0.7' },
 	{ path: '/contact', changefreq: 'monthly', priority: '0.8' }
 ];
 

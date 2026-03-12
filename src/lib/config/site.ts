@@ -27,6 +27,7 @@ export const NAV_LINKS = [
 	{ href: '/services', label: 'Services' },
 	{ href: '/industries', label: 'Industries' },
 	{ href: '/about', label: 'About' },
+	{ href: '/work', label: 'Our Work' },
 	{ href: '/contact', label: 'Contact' }
 ] as const;
 
@@ -83,20 +84,20 @@ export const SERVICES = [
 ] as const;
 
 export const INDUSTRIES = [
-	{ name: 'Aerospace', icon: '✈' },
-	{ name: 'Automotive', icon: '🚗' },
-	{ name: 'Agriculture', icon: '🌾' },
-	{ name: 'Bio-Medical', icon: '🧬' },
-	{ name: 'Construction', icon: '🏗' },
-	{ name: 'Defense', icon: '🛡' },
-	{ name: 'Energy', icon: '⚡' },
-	{ name: 'Eyewear', icon: '👓' },
-	{ name: 'Food & Beverage', icon: '🍽' },
-	{ name: 'Healthcare', icon: '🏥' },
-	{ name: 'Marine', icon: '⚓' },
-	{ name: 'Telecommunications', icon: '📡' },
-	{ name: 'Electronics', icon: '💡' },
-	{ name: 'Consumer Goods', icon: '📦' },
-	{ name: 'Industrial', icon: '🏭' },
-	{ name: 'Safety Equipment', icon: '🦺' }
+	{ name: 'Aerospace' },
+	{ name: 'Automotive' },
+	{ name: 'Agriculture' },
+	{ name: 'Bio-Medical' },
+	{ name: 'Construction' },
+	{ name: 'Defense' },
+	{ name: 'Energy' },
+	{ name: 'Eyewear' },
+	{ name: 'Food & Beverage' },
+	{ name: 'Healthcare' },
+	{ name: 'Marine' },
+	{ name: 'Telecommunications' },
+	{ name: 'Electronics' },
+	{ name: 'Consumer Goods' },
+	{ name: 'Industrial' },
+	{ name: 'Safety Equipment' }
 ] as const;

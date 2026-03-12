@@ -15,18 +15,18 @@
 </script>
 
 <section class="section-padding bg-white" aria-label="Our services">
-	<div class="section-container">
+	<div class="section-container flex flex-col items-center">
 		<SectionHeading
 			label="What We Do"
 			title="Full-Service Injection Molding & Machining"
 			subtitle="From CAD design through production molding and secondary operations — everything under one roof in Gardena, CA."
 		/>
 
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
 			{#each SERVICES as service}
 				<a
 					href="/services#{service.id}"
-					class="group bg-brand-section-alt border border-gray-200 rounded-sm p-6 hover:border-brand-yellow transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm"
+					class="group bg-brand-section-alt border border-gray-200 rounded-sm p-6 hover:border-brand-yellow transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm flex flex-col justify-center"
 				>
 					<div
 						class="w-10 h-10 text-brand-yellow mb-4 group-hover:scale-110 transition-transform duration-200"

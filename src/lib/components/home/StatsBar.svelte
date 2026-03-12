@@ -13,9 +13,9 @@
 			{#each stats as stat}
 				<div class="text-center md:px-6">
 					<dt class="sr-only">{stat.label}</dt>
-					<div class="text-3xl md:text-4xl font-black text-brand-navy mb-1">{stat.value}</div>
-					<div class="text-brand-navy font-bold text-sm uppercase tracking-wide">{stat.label}</div>
-					<div class="text-brand-navy/60 text-xs mt-0.5">{stat.detail}</div>
+					<div class="text-3xl md:text-4xl font-black text-white mb-1">{stat.value}</div>
+					<div class="text-white font-bold text-sm uppercase tracking-wide">{stat.label}</div>
+					<div class="text-white/60 text-xs mt-0.5">{stat.detail}</div>
 				</div>
 			{/each}
 		</dl>

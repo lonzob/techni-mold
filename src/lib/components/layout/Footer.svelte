@@ -10,13 +10,11 @@
 			<!-- Brand column -->
 			<div>
 				<div class="flex items-center gap-3 mb-4">
-					<div class="grid grid-cols-2 gap-0.5 w-6 h-6 shrink-0">
-						<div class="bg-brand-yellow rounded-[2px]"></div>
-						<div class="bg-brand-yellow/60 rounded-[2px]"></div>
-						<div class="bg-brand-yellow/60 rounded-[2px]"></div>
-						<div class="bg-brand-yellow rounded-[2px]"></div>
+					<img src="/images/tm-icon-lg.png" alt="{SITE.name}" class="h-10 w-auto" />
+					<div class="leading-tight">
+						<span class="font-bold text-white text-sm tracking-wide uppercase">Techni-Mold</span>
+						<span class="block text-white/50 text-[10px] tracking-widest uppercase">& Engineering, Inc.</span>
 					</div>
-					<span class="font-bold text-white text-sm tracking-wide uppercase">Techni-Mold</span>
 				</div>
 				<p class="text-brand-muted text-sm leading-relaxed mb-4">
 					A leader in plastic injection molding, mold design, and CNC machining in Los Angeles since

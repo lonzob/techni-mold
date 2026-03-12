@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { INDUSTRIES } from '$lib/config/site';
+	import { Factory } from 'lucide-svelte';
 </script>
 
 <section class="bg-brand-section-alt border-y border-gray-200 py-12 overflow-hidden" aria-label="Industries we serve">
@@ -17,14 +18,14 @@
 			<!-- First set -->
 			{#each INDUSTRIES as industry}
 				<div class="flex items-center gap-2 shrink-0 bg-brand-steel/30 border border-brand-steel/50 rounded-sm px-4 py-2">
-					<span aria-hidden="true">{industry.icon}</span>
+					<Factory size={13} class="text-brand-yellow shrink-0" aria-hidden="true" />
 					<span class="text-sm font-medium text-brand-navy whitespace-nowrap">{industry.name}</span>
 				</div>
 			{/each}
 			<!-- Duplicate for seamless loop -->
 			{#each INDUSTRIES as industry}
 				<div class="flex items-center gap-2 shrink-0 bg-brand-steel/30 border border-brand-steel/50 rounded-sm px-4 py-2" aria-hidden="true">
-					<span aria-hidden="true">{industry.icon}</span>
+					<Factory size={13} class="text-brand-yellow shrink-0" aria-hidden="true" />
 					<span class="text-sm font-medium text-brand-navy whitespace-nowrap">{industry.name}</span>
 				</div>
 			{/each}

@@ -6,12 +6,15 @@
 	class="relative min-h-[90vh] flex items-center overflow-hidden bg-brand-navy"
 	aria-label="Hero"
 >
-	<!-- Background grid pattern -->
+	<!-- Background photo -->
 	<div
-		class="absolute inset-0 opacity-[0.03]"
-		style="background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 40px 40px;"
+		class="absolute inset-0 bg-cover bg-top"
+		style="background-image: url('/images/60_sample.JPG');"
 		aria-hidden="true"
 	></div>
+
+	<!-- Navy overlay -->
+	<div class="absolute inset-0 bg-brand-navy/80" aria-hidden="true"></div>
 
 	<!-- Accent gradient -->
 	<div

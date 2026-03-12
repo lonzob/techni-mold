@@ -12,20 +12,10 @@
 		<nav class="flex items-center justify-between h-16" aria-label="Main navigation">
 			<!-- Logo -->
 			<a href="/" class="flex items-center gap-3 group" onclick={closeMobile}>
-				<div class="flex items-center gap-1">
-					<!-- Geometric logo mark inspired by original interlocking blocks -->
-					<div class="grid grid-cols-2 gap-0.5 w-7 h-7">
-						<div class="bg-brand-yellow rounded-[2px]"></div>
-						<div class="bg-brand-yellow/60 rounded-[2px]"></div>
-						<div class="bg-brand-yellow/60 rounded-[2px]"></div>
-						<div class="bg-brand-yellow rounded-[2px]"></div>
-					</div>
-				</div>
+				<img src="/images/tm-icon-lg.png" alt="{SITE.name}" class="h-10 w-auto" />
 				<div class="leading-tight">
 					<span class="font-bold text-brand-navy text-sm tracking-wide uppercase">Techni-Mold</span>
-					<span class="block text-gray-400 text-[10px] tracking-widest uppercase"
-						>& Engineering</span
-					>
+					<span class="block text-gray-400 text-[10px] tracking-widest uppercase">& Engineering, Inc.</span>
 				</div>
 			</a>
 

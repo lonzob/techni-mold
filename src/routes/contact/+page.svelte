@@ -1,16 +1,19 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
 	import { SITE } from '$lib/config/site';
+	import { Phone, Printer, Mail } from 'lucide-svelte';
 
 	let { form } = $props();
 </script>
 
 <!-- Hero -->
-<section class="bg-brand-section-alt border-b border-gray-200 py-16 md:py-20">
-	<div class="section-container">
+<section class="relative bg-brand-navy border-b border-gray-200 py-16 md:py-20 overflow-hidden">
+	<div class="absolute inset-0 bg-cover bg-top" style="background-image: url('/images/pexels-olly-3756678.jpg');" aria-hidden="true"></div>
+	<div class="absolute inset-0 bg-brand-navy/80" aria-hidden="true"></div>
+	<div class="section-container relative z-10">
 		<p class="text-brand-yellow font-bold text-xs uppercase tracking-widest mb-3">Get in Touch</p>
-		<h1 class="text-4xl md:text-5xl font-bold text-brand-navy mb-4">Contact Techni-Mold</h1>
-		<p class="text-brand-muted text-lg max-w-2xl">
+		<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Contact Techni-Mold</h1>
+		<p class="text-white/70 text-lg max-w-2xl">
 			Request a quote, ask a technical question, or simply introduce yourself. We respond quickly.
 		</p>
 	</div>
@@ -50,9 +53,9 @@
 									type="text"
 									autocomplete="given-name"
 									value={form?.values?.firstName ?? ''}
-									class="w-full bg-brand-charcoal border {form?.errors?.firstName
+									class="w-full bg-white border {form?.errors?.firstName
 										? 'border-red-500'
-										: 'border-gray-300'} rounded-sm px-4 py-3 text-white placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-yellow transition-colors text-sm"
+										: 'border-gray-300'} rounded-sm px-4 py-3 text-brand-navy placeholder:text-gray-400 focus:outline-none focus:border-brand-yellow transition-colors text-sm"
 									placeholder="Jane"
 									aria-required="true"
 									aria-describedby={form?.errors?.firstName ? 'firstName-error' : undefined}
@@ -89,9 +92,9 @@
 								type="email"
 								autocomplete="email"
 								value={form?.values?.email ?? ''}
-								class="w-full bg-brand-charcoal border {form?.errors?.email
+								class="w-full bg-white border {form?.errors?.email
 									? 'border-red-500'
-									: 'border-gray-300'} rounded-sm px-4 py-3 text-white placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-yellow transition-colors text-sm"
+									: 'border-gray-300'} rounded-sm px-4 py-3 text-brand-navy placeholder:text-gray-400 focus:outline-none focus:border-brand-yellow transition-colors text-sm"
 								placeholder="jane@company.com"
 								aria-required="true"
 								aria-describedby={form?.errors?.email ? 'email-error' : undefined}
@@ -125,9 +128,9 @@
 								id="message"
 								name="message"
 								rows="6"
-								class="w-full bg-brand-charcoal border {form?.errors?.message
+								class="w-full bg-white border {form?.errors?.message
 									? 'border-red-500'
-									: 'border-gray-300'} rounded-sm px-4 py-3 text-white placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-yellow transition-colors text-sm resize-none"
+									: 'border-gray-300'} rounded-sm px-4 py-3 text-brand-navy placeholder:text-gray-400 focus:outline-none focus:border-brand-yellow transition-colors text-sm resize-none"
 								placeholder="Describe your project, part requirements, quantities, and any other details..."
 								aria-required="true"
 								aria-describedby={form?.errors?.message ? 'message-error' : undefined}
@@ -146,11 +149,11 @@
 
 			<!-- Contact info + map -->
 			<div class="space-y-6">
-				<div class="bg-brand-charcoal border border-brand-steel/40 rounded-sm p-6">
+				<div class="bg-brand-steel border border-brand-yellow-dark/40 rounded-sm p-6">
 					<h2 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
 						Contact Information
 					</h2>
-					<address class="not-italic space-y-4 text-sm text-brand-muted">
+					<address class="not-italic space-y-4 text-sm text-white/70">
 						<div>
 							<p class="text-white font-medium mb-1">{SITE.name}</p>
 							<p>{SITE.address.street}</p>
@@ -161,18 +164,18 @@
 								href="tel:{SITE.phoneTel}"
 								class="flex items-center gap-2 hover:text-brand-yellow transition-colors"
 							>
-								<span>📞</span>
+								<Phone size={14} class="shrink-0" />
 								{SITE.phone}
 							</a>
 							<p class="flex items-center gap-2">
-								<span>📠</span>
+								<Printer size={14} class="shrink-0" />
 								{SITE.fax}
 							</p>
 							<a
 								href="mailto:{SITE.email}"
 								class="flex items-center gap-2 hover:text-brand-yellow transition-colors"
 							>
-								<span>✉</span>
+								<Mail size={14} class="shrink-0" />
 								{SITE.email}
 							</a>
 						</div>

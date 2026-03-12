@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { SITE } from '$lib/config/site';
 	import SectionHeading from '$lib/components/ui/SectionHeading.svelte';
+	import { Check } from 'lucide-svelte';
 
 	const equipment = [
 		{ machine: 'Milacron Roboshot (All-Electric)', tonnage: '55 ton', qty: '2' },
@@ -41,14 +42,16 @@
 </script>
 
 <!-- Hero -->
-<section class="bg-brand-section-alt border-b border-gray-200 py-16 md:py-20">
-	<div class="section-container">
+<section class="relative bg-brand-navy border-b border-gray-200 py-16 md:py-20 overflow-hidden">
+	<div class="absolute inset-0 bg-cover bg-top" style="background-image: url('/images/P1020677.JPG');" aria-hidden="true"></div>
+	<div class="absolute inset-0 bg-brand-navy/80" aria-hidden="true"></div>
+	<div class="section-container relative z-10">
 		<p class="text-brand-yellow font-bold text-xs uppercase tracking-widest mb-3">Our Story</p>
-		<h1 class="text-4xl md:text-5xl font-bold text-brand-navy mb-4">
+		<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
 			60+ Years of Precision<br />
 			<span class="text-brand-yellow">Made in America</span>
 		</h1>
-		<p class="text-brand-muted text-lg max-w-2xl">
+		<p class="text-white/70 text-lg max-w-2xl">
 			{SITE.name} has been a trusted plastic injection molding partner for manufacturers across Los
 			Angeles and Southern California since the 1960s.
 		</p>
@@ -114,7 +117,7 @@
 						<div
 							class="w-10 h-10 bg-brand-yellow/10 border border-brand-yellow/30 rounded-sm flex items-center justify-center mx-auto mb-4"
 						>
-							<span class="text-brand-yellow font-black text-xs">✓</span>
+							<Check size={18} class="text-brand-yellow" />
 						</div>
 						<h3 class="text-brand-navy font-bold mb-2">{cert.title}</h3>
 						<p class="text-brand-muted text-sm leading-relaxed">{cert.description}</p>
