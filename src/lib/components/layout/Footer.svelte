@@ -16,7 +16,7 @@
 						<span class="block text-white/50 text-[10px] tracking-widest uppercase">& Engineering, Inc.</span>
 					</div>
 				</div>
-				<p class="text-brand-muted text-sm leading-relaxed mb-4">
+				<p class="text-white/55 text-sm leading-relaxed mb-4">
 					A leader in plastic injection molding, mold design, and CNC machining in Los Angeles since
 					the 1960s.
 				</p>
@@ -44,7 +44,7 @@
 						<li>
 							<a
 								href={link.href}
-								class="text-brand-muted hover:text-brand-yellow text-sm transition-colors"
+								class="text-white/55 hover:text-brand-yellow text-sm transition-colors"
 							>
 								{link.label}
 							</a>
@@ -56,7 +56,7 @@
 			<!-- Contact -->
 			<div>
 				<h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Contact</h3>
-				<address class="not-italic space-y-3 text-sm text-brand-muted">
+				<address class="not-italic space-y-3 text-sm text-white/55">
 					<div>
 						<p>{SITE.address.street}</p>
 						<p>{SITE.address.city}, {SITE.address.state} {SITE.address.zip}</p>
@@ -83,11 +83,11 @@
 		</div>
 
 		<div class="border-t border-brand-steel/40 pt-6 flex flex-col sm:flex-row justify-between gap-2">
-			<p class="text-brand-muted text-xs">
+			<p class="text-white/55 text-xs">
 				&copy; {year}
 				{SITE.name}. All rights reserved.
 			</p>
-			<p class="text-brand-muted text-xs">Gardena, CA 90247 — Serving Southern California</p>
+			<p class="text-white/55 text-xs">Gardena, CA 90247 — Serving Southern California</p>
 		</div>
 	</div>
 </footer>
