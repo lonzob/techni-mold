@@ -23,10 +23,10 @@
 </script>
 
 <!-- Hero -->
-<section class="bg-brand-charcoal border-b border-brand-steel/40 py-16 md:py-20">
+<section class="bg-brand-section-alt border-b border-gray-200 py-16 md:py-20">
 	<div class="section-container">
 		<p class="text-brand-yellow font-bold text-xs uppercase tracking-widest mb-3">Who We Serve</p>
-		<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Industries Served</h1>
+		<h1 class="text-4xl md:text-5xl font-bold text-brand-navy mb-4">Industries Served</h1>
 		<p class="text-brand-muted text-lg max-w-2xl">
 			{SITE.shortName} has manufactured plastic injection molded parts for virtually every industrial
 			sector. Our ISO compliant processes and NSF certification qualify us for the most demanding applications.
@@ -35,7 +35,7 @@
 </section>
 
 <!-- Industries grid -->
-<section class="section-padding bg-brand-navy">
+<section class="section-padding bg-white">
 	<div class="section-container">
 		<SectionHeading
 			label="Sectors"
@@ -46,7 +46,7 @@
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 			{#each INDUSTRIES as industry}
 				<div
-					class="bg-brand-charcoal border border-brand-steel/40 rounded-sm p-5 hover:border-brand-yellow/40 transition-colors duration-200"
+					class="bg-white border border-gray-200 rounded-sm p-5 hover:border-brand-yellow transition-colors duration-200"
 				>
 					<div class="text-3xl mb-3" aria-hidden="true">{industry.icon}</div>
 					<h2 class="text-white font-semibold mb-2 text-sm">{industry.name}</h2>
@@ -60,9 +60,9 @@
 </section>
 
 <!-- CTA -->
-<section class="bg-brand-charcoal section-padding border-t border-brand-steel/40">
+<section class="bg-brand-section-alt section-padding border-t border-gray-200">
 	<div class="section-container text-center">
-		<h2 class="text-3xl font-bold text-white mb-4">Don't See Your Industry?</h2>
+		<h2 class="text-3xl font-bold text-brand-navy mb-4">Don't See Your Industry?</h2>
 		<p class="text-brand-muted mb-6 max-w-lg mx-auto">
 			We work with customers across a wide range of sectors. Contact us to discuss your specific
 			application requirements.

@@ -6,17 +6,17 @@
 </script>
 
 <!-- Hero -->
-<section class="bg-brand-charcoal border-b border-brand-steel/40 py-16 md:py-20">
+<section class="bg-brand-section-alt border-b border-gray-200 py-16 md:py-20">
 	<div class="section-container">
 		<p class="text-brand-yellow font-bold text-xs uppercase tracking-widest mb-3">Get in Touch</p>
-		<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Contact Techni-Mold</h1>
+		<h1 class="text-4xl md:text-5xl font-bold text-brand-navy mb-4">Contact Techni-Mold</h1>
 		<p class="text-brand-muted text-lg max-w-2xl">
 			Request a quote, ask a technical question, or simply introduce yourself. We respond quickly.
 		</p>
 	</div>
 </section>
 
-<section class="section-padding bg-brand-navy">
+<section class="section-padding bg-white">
 	<div class="section-container">
 		<div class="grid md:grid-cols-[2fr_1fr] gap-12">
 			<!-- Form -->
@@ -41,7 +41,7 @@
 					>
 						<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
 							<div>
-								<label for="firstName" class="block text-sm font-medium text-white mb-1.5">
+								<label for="firstName" class="block text-sm font-medium text-brand-navy mb-1.5">
 									First Name <span class="text-brand-yellow" aria-label="required">*</span>
 								</label>
 								<input
@@ -52,7 +52,7 @@
 									value={form?.values?.firstName ?? ''}
 									class="w-full bg-brand-charcoal border {form?.errors?.firstName
 										? 'border-red-500'
-										: 'border-brand-steel/60'} rounded-sm px-4 py-3 text-white placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-yellow transition-colors text-sm"
+										: 'border-gray-300'} rounded-sm px-4 py-3 text-white placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-yellow transition-colors text-sm"
 									placeholder="Jane"
 									aria-required="true"
 									aria-describedby={form?.errors?.firstName ? 'firstName-error' : undefined}
@@ -64,7 +64,7 @@
 								{/if}
 							</div>
 							<div>
-								<label for="lastName" class="block text-sm font-medium text-white mb-1.5">
+								<label for="lastName" class="block text-sm font-medium text-brand-navy mb-1.5">
 									Last Name
 								</label>
 								<input
@@ -73,14 +73,14 @@
 									type="text"
 									autocomplete="family-name"
 									value={form?.values?.lastName ?? ''}
-									class="w-full bg-brand-charcoal border border-brand-steel/60 rounded-sm px-4 py-3 text-white placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-yellow transition-colors text-sm"
+									class="w-full bg-white border border-gray-300 rounded-sm px-4 py-3 text-brand-navy placeholder:text-gray-400 focus:outline-none focus:border-brand-yellow transition-colors text-sm"
 									placeholder="Smith"
 								/>
 							</div>
 						</div>
 
 						<div>
-							<label for="email" class="block text-sm font-medium text-white mb-1.5">
+							<label for="email" class="block text-sm font-medium text-brand-navy mb-1.5">
 								Email Address <span class="text-brand-yellow" aria-label="required">*</span>
 							</label>
 							<input
@@ -91,7 +91,7 @@
 								value={form?.values?.email ?? ''}
 								class="w-full bg-brand-charcoal border {form?.errors?.email
 									? 'border-red-500'
-									: 'border-brand-steel/60'} rounded-sm px-4 py-3 text-white placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-yellow transition-colors text-sm"
+									: 'border-gray-300'} rounded-sm px-4 py-3 text-white placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-yellow transition-colors text-sm"
 								placeholder="jane@company.com"
 								aria-required="true"
 								aria-describedby={form?.errors?.email ? 'email-error' : undefined}
@@ -104,7 +104,7 @@
 						</div>
 
 						<div>
-							<label for="subject" class="block text-sm font-medium text-white mb-1.5">
+							<label for="subject" class="block text-sm font-medium text-brand-navy mb-1.5">
 								Subject
 							</label>
 							<input
@@ -112,13 +112,13 @@
 								name="subject"
 								type="text"
 								value={form?.values?.subject ?? ''}
-								class="w-full bg-brand-charcoal border border-brand-steel/60 rounded-sm px-4 py-3 text-white placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-yellow transition-colors text-sm"
+								class="w-full bg-white border border-gray-300 rounded-sm px-4 py-3 text-brand-navy placeholder:text-gray-400 focus:outline-none focus:border-brand-yellow transition-colors text-sm"
 								placeholder="Quote Request — Injection Molding"
 							/>
 						</div>
 
 						<div>
-							<label for="message" class="block text-sm font-medium text-white mb-1.5">
+							<label for="message" class="block text-sm font-medium text-brand-navy mb-1.5">
 								Message <span class="text-brand-yellow" aria-label="required">*</span>
 							</label>
 							<textarea
@@ -127,7 +127,7 @@
 								rows="6"
 								class="w-full bg-brand-charcoal border {form?.errors?.message
 									? 'border-red-500'
-									: 'border-brand-steel/60'} rounded-sm px-4 py-3 text-white placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-yellow transition-colors text-sm resize-none"
+									: 'border-gray-300'} rounded-sm px-4 py-3 text-white placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-yellow transition-colors text-sm resize-none"
 								placeholder="Describe your project, part requirements, quantities, and any other details..."
 								aria-required="true"
 								aria-describedby={form?.errors?.message ? 'message-error' : undefined}

@@ -106,10 +106,10 @@
 </script>
 
 <!-- Hero -->
-<section class="bg-brand-charcoal border-b border-brand-steel/40 py-16 md:py-20">
+<section class="bg-brand-section-alt border-b border-gray-200 py-16 md:py-20">
 	<div class="section-container">
 		<p class="text-brand-yellow font-bold text-xs uppercase tracking-widest mb-3">What We Do</p>
-		<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+		<h1 class="text-4xl md:text-5xl font-bold text-brand-navy mb-4">
 			Plastic Injection Molding Services<br />
 			<span class="text-brand-yellow">Southern California</span>
 		</h1>
@@ -121,22 +121,22 @@
 </section>
 
 <!-- Services detail -->
-<section class="section-padding bg-brand-navy">
+<section class="section-padding bg-white">
 	<div class="section-container space-y-12">
 		{#each SERVICES as service}
 			<article
 				id={service.id}
-				class="grid md:grid-cols-[1fr_2fr] gap-8 pb-12 border-b border-brand-steel/30 last:border-0 last:pb-0"
+				class="grid md:grid-cols-[1fr_2fr] gap-8 pb-12 border-b border-gray-100 last:border-0 last:pb-0"
 			>
 				<div>
 					<div class="w-12 h-12 text-brand-yellow mb-4">
 						{@html icons[service.icon]}
 					</div>
-					<h2 class="text-2xl font-bold text-white mb-2">{service.title}</h2>
+					<h2 class="text-2xl font-bold text-brand-navy mb-2">{service.title}</h2>
 					<p class="text-brand-muted text-sm">{service.description}</p>
 				</div>
 				<div>
-					<p class="text-white/80 mb-5 leading-relaxed">
+					<p class="text-brand-navy/70 mb-5 leading-relaxed">
 						{serviceDetails[service.id]?.detail}
 					</p>
 					<ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -154,9 +154,9 @@
 </section>
 
 <!-- CTA -->
-<section class="bg-brand-charcoal section-padding border-t border-brand-steel/40">
+<section class="bg-brand-section-alt section-padding border-t border-gray-200">
 	<div class="section-container text-center">
-		<h2 class="text-3xl font-bold text-white mb-4">Need a Custom Quote?</h2>
+		<h2 class="text-3xl font-bold text-brand-navy mb-4">Need a Custom Quote?</h2>
 		<p class="text-brand-muted mb-6 max-w-lg mx-auto">
 			Contact our team to discuss your project requirements. We'll respond quickly.
 		</p>

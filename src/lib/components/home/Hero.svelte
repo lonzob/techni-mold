@@ -16,7 +16,7 @@
 	<!-- Accent gradient -->
 	<div
 		class="absolute top-0 right-0 w-1/2 h-full opacity-10"
-		style="background: radial-gradient(ellipse at 80% 20%, #f5c400 0%, transparent 60%);"
+		style="background: radial-gradient(ellipse at 80% 20%, #c49a00 0%, transparent 60%);"
 		aria-hidden="true"
 	></div>
 
@@ -35,7 +35,7 @@
 				Experts
 			</h1>
 
-			<p class="text-brand-muted text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
+			<p class="text-white/70 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
 				{SITE.name} delivers custom injection molding, mold design, CNC machining, and EDM services
 				for aerospace, medical, automotive, and industrial applications. ISO compliant. NSF certified.
 				Made in America.
@@ -48,7 +48,7 @@
 
 			<div class="flex flex-wrap gap-x-8 gap-y-3">
 				{#each ['60+ Years Experience', 'ISO Compliant', 'NSF Certified', '1–2 Week Delivery'] as badge}
-					<div class="flex items-center gap-2 text-sm text-brand-muted">
+					<div class="flex items-center gap-2 text-sm text-white/60">
 						<span class="w-1.5 h-1.5 rounded-full bg-brand-yellow shrink-0" aria-hidden="true"
 						></span>
 						{badge}

@@ -22,7 +22,7 @@
 			{label}
 		</p>
 	{/if}
-	<h2 class="text-3xl md:text-4xl font-bold text-white leading-tight">
+	<h2 class="text-3xl md:text-4xl font-bold text-brand-navy leading-tight">
 		{title}
 	</h2>
 	{#if subtitle}

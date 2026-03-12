@@ -10,7 +10,7 @@
 	<p class="text-brand-yellow font-bold text-sm uppercase tracking-widest mb-2">
 		{$page.status}
 	</p>
-	<h1 class="text-4xl font-bold text-white mb-4">
+	<h1 class="text-4xl font-bold text-brand-navy mb-4">
 		{$page.status === 404 ? 'Page Not Found' : 'Something Went Wrong'}
 	</h1>
 	<p class="text-brand-muted text-lg mb-8 max-w-md">

@@ -2,30 +2,30 @@
 	import { INDUSTRIES } from '$lib/config/site';
 </script>
 
-<section class="bg-brand-charcoal border-y border-brand-steel/40 py-12 overflow-hidden" aria-label="Industries we serve">
+<section class="bg-brand-section-alt border-y border-gray-200 py-12 overflow-hidden" aria-label="Industries we serve">
 	<div class="section-container mb-8 text-center">
 		<p class="text-brand-yellow font-bold text-xs uppercase tracking-widest mb-2">Industries Served</p>
-		<h2 class="text-2xl font-bold text-white">Trusted Across 20+ Sectors</h2>
+		<h2 class="text-2xl font-bold text-brand-navy">Trusted Across 20+ Sectors</h2>
 	</div>
 
 	<div class="relative" aria-label="Scrolling list of industries">
 		<!-- Fade edges -->
-		<div class="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-brand-charcoal to-transparent z-10 pointer-events-none" aria-hidden="true"></div>
-		<div class="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-brand-charcoal to-transparent z-10 pointer-events-none" aria-hidden="true"></div>
+		<div class="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-brand-section-alt to-transparent z-10 pointer-events-none" aria-hidden="true"></div>
+		<div class="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-brand-section-alt to-transparent z-10 pointer-events-none" aria-hidden="true"></div>
 
 		<div class="flex gap-3 marquee-track" role="marquee" aria-label="Industries: {INDUSTRIES.map(i => i.name).join(', ')}">
 			<!-- First set -->
 			{#each INDUSTRIES as industry}
 				<div class="flex items-center gap-2 shrink-0 bg-brand-steel/30 border border-brand-steel/50 rounded-sm px-4 py-2">
 					<span aria-hidden="true">{industry.icon}</span>
-					<span class="text-sm font-medium text-white whitespace-nowrap">{industry.name}</span>
+					<span class="text-sm font-medium text-brand-navy whitespace-nowrap">{industry.name}</span>
 				</div>
 			{/each}
 			<!-- Duplicate for seamless loop -->
 			{#each INDUSTRIES as industry}
 				<div class="flex items-center gap-2 shrink-0 bg-brand-steel/30 border border-brand-steel/50 rounded-sm px-4 py-2" aria-hidden="true">
 					<span aria-hidden="true">{industry.icon}</span>
-					<span class="text-sm font-medium text-white whitespace-nowrap">{industry.name}</span>
+					<span class="text-sm font-medium text-brand-navy whitespace-nowrap">{industry.name}</span>
 				</div>
 			{/each}
 		</div>

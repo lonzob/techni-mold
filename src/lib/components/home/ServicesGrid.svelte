@@ -14,7 +14,7 @@
 	};
 </script>
 
-<section class="section-padding bg-brand-navy" aria-label="Our services">
+<section class="section-padding bg-white" aria-label="Our services">
 	<div class="section-container">
 		<SectionHeading
 			label="What We Do"
@@ -26,14 +26,14 @@
 			{#each SERVICES as service}
 				<a
 					href="/services#{service.id}"
-					class="group bg-brand-charcoal border border-brand-steel/40 rounded-sm p-6 hover:border-brand-yellow/50 transition-all duration-200 hover:-translate-y-0.5"
+					class="group bg-brand-section-alt border border-gray-200 rounded-sm p-6 hover:border-brand-yellow transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm"
 				>
 					<div
 						class="w-10 h-10 text-brand-yellow mb-4 group-hover:scale-110 transition-transform duration-200"
 					>
 						{@html icons[service.icon]}
 					</div>
-					<h3 class="text-white font-semibold mb-2 text-sm">{service.title}</h3>
+					<h3 class="text-brand-navy font-semibold mb-2 text-sm">{service.title}</h3>
 					<p class="text-brand-muted text-xs leading-relaxed">{service.description}</p>
 				</a>
 			{/each}

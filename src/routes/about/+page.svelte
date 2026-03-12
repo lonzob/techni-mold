@@ -41,10 +41,10 @@
 </script>
 
 <!-- Hero -->
-<section class="bg-brand-charcoal border-b border-brand-steel/40 py-16 md:py-20">
+<section class="bg-brand-section-alt border-b border-gray-200 py-16 md:py-20">
 	<div class="section-container">
 		<p class="text-brand-yellow font-bold text-xs uppercase tracking-widest mb-3">Our Story</p>
-		<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+		<h1 class="text-4xl md:text-5xl font-bold text-brand-navy mb-4">
 			60+ Years of Precision<br />
 			<span class="text-brand-yellow">Made in America</span>
 		</h1>
@@ -56,7 +56,7 @@
 </section>
 
 <!-- Story -->
-<section class="section-padding bg-brand-navy">
+<section class="section-padding bg-white">
 	<div class="section-container">
 		<div class="grid md:grid-cols-2 gap-12 items-start mb-16">
 			<div>
@@ -86,7 +86,7 @@
 
 			<!-- Timeline -->
 			<div>
-				<h2 class="text-white font-semibold text-sm uppercase tracking-wider mb-6">
+				<h2 class="text-brand-navy font-semibold text-sm uppercase tracking-wider mb-6">
 					Company Milestones
 				</h2>
 				<ol class="space-y-4">
@@ -105,18 +105,18 @@
 
 		<!-- Certifications -->
 		<div class="mb-16">
-			<h2 class="text-white font-bold text-2xl mb-6 text-center">Certifications & Standards</h2>
+			<h2 class="text-brand-navy font-bold text-2xl mb-6 text-center">Certifications & Standards</h2>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 				{#each certifications as cert}
 					<div
-						class="bg-brand-charcoal border border-brand-steel/40 rounded-sm p-6 text-center hover:border-brand-yellow/40 transition-colors"
+						class="bg-white border border-gray-200 rounded-sm p-6 text-center hover:border-brand-yellow transition-colors"
 					>
 						<div
 							class="w-10 h-10 bg-brand-yellow/10 border border-brand-yellow/30 rounded-sm flex items-center justify-center mx-auto mb-4"
 						>
 							<span class="text-brand-yellow font-black text-xs">✓</span>
 						</div>
-						<h3 class="text-white font-bold mb-2">{cert.title}</h3>
+						<h3 class="text-brand-navy font-bold mb-2">{cert.title}</h3>
 						<p class="text-brand-muted text-sm leading-relaxed">{cert.description}</p>
 					</div>
 				{/each}
@@ -125,11 +125,11 @@
 
 		<!-- Equipment -->
 		<div>
-			<h2 class="text-white font-bold text-2xl mb-6 text-center">Equipment & Capabilities</h2>
+			<h2 class="text-brand-navy font-bold text-2xl mb-6 text-center">Equipment & Capabilities</h2>
 			<div class="overflow-x-auto">
 				<table class="w-full text-sm">
 					<thead>
-						<tr class="border-b border-brand-steel/40">
+						<tr class="border-b border-gray-200">
 							<th class="text-left text-brand-muted font-semibold py-3 pr-8">Machine / Equipment</th>
 							<th class="text-left text-brand-muted font-semibold py-3 pr-8">Capacity / Spec</th>
 							<th class="text-left text-brand-muted font-semibold py-3">Qty</th>
@@ -137,8 +137,8 @@
 					</thead>
 					<tbody>
 						{#each equipment as row, i}
-							<tr class="border-b border-brand-steel/20 {i % 2 === 0 ? '' : 'bg-brand-charcoal/30'}">
-								<td class="text-white py-3 pr-8">{row.machine}</td>
+							<tr class="border-b border-gray-100 {i % 2 === 0 ? '' : 'bg-brand-section-alt'}">
+								<td class="text-brand-navy py-3 pr-8">{row.machine}</td>
 								<td class="text-brand-muted py-3 pr-8">{row.tonnage}</td>
 								<td class="text-brand-muted py-3">{row.qty}</td>
 							</tr>
@@ -151,9 +151,9 @@
 </section>
 
 <!-- CTA -->
-<section class="bg-brand-charcoal section-padding border-t border-brand-steel/40">
+<section class="bg-brand-section-alt section-padding border-t border-gray-200">
 	<div class="section-container text-center">
-		<h2 class="text-3xl font-bold text-white mb-4">Work With Us</h2>
+		<h2 class="text-3xl font-bold text-brand-navy mb-4">Work With Us</h2>
 		<p class="text-brand-muted mb-6 max-w-lg mx-auto">
 			Ready to partner with a manufacturer that's been doing this for 60 years? Let's talk about
 			your next project.

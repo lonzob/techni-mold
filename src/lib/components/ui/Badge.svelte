@@ -8,9 +8,9 @@
 	} = $props();
 
 	const classes = {
-		default: 'bg-brand-steel/50 text-brand-muted',
-		yellow: 'bg-brand-yellow/10 text-brand-yellow border border-brand-yellow/20',
-		outline: 'border border-brand-steel text-brand-muted'
+		default: 'bg-gray-100 text-brand-muted',
+		yellow: 'bg-brand-yellow/10 text-brand-yellow border border-brand-yellow/30',
+		outline: 'border border-gray-300 text-brand-muted'
 	}[variant];
 </script>
 

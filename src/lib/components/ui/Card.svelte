@@ -13,8 +13,8 @@
 </script>
 
 <div
-	class="bg-brand-charcoal border border-brand-steel/40 rounded-sm p-6
-		{hover ? 'hover:border-brand-yellow/40 transition-colors duration-200' : ''}
+	class="bg-white border border-gray-200 rounded-sm p-6
+		{hover ? 'hover:border-brand-yellow transition-colors duration-200 hover:shadow-sm' : ''}
 		{extraClass}"
 >
 	{@render children()}
