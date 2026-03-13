@@ -92,6 +92,11 @@
 				<h2 class="text-brand-navy font-semibold text-sm uppercase tracking-wider mb-6">
 					Company Milestones
 				</h2>
+				<img
+					src="/images/TME-oldTime.png"
+					alt="Techni-Mold early years"
+					class="w-full rounded-sm mb-6 object-cover"
+				/>
 				<ol class="space-y-4">
 					{#each milestones as milestone}
 						<li class="flex gap-4">

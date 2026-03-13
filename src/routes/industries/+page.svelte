@@ -1,6 +1,29 @@
 <script lang="ts">
 	import { INDUSTRIES, SITE } from '$lib/config/site';
 	import SectionHeading from '$lib/components/ui/SectionHeading.svelte';
+	import {
+		Plane, Car, Leaf, Microscope, HardHat, Shield, Zap, Glasses,
+		UtensilsCrossed, Heart, Anchor, Radio, Cpu, ShoppingBag, Factory, ShieldCheck
+	} from 'lucide-svelte';
+
+	const industryIcons: Record<string, typeof Plane> = {
+		Aerospace: Plane,
+		Automotive: Car,
+		Agriculture: Leaf,
+		'Bio-Medical': Microscope,
+		Construction: HardHat,
+		Defense: Shield,
+		Energy: Zap,
+		Eyewear: Glasses,
+		'Food & Beverage': UtensilsCrossed,
+		Healthcare: Heart,
+		Marine: Anchor,
+		Telecommunications: Radio,
+		Electronics: Cpu,
+		'Consumer Goods': ShoppingBag,
+		Industrial: Factory,
+		'Safety Equipment': ShieldCheck
+	};
 
 	const industryDetails: Record<string, string> = {
 		Aerospace: 'FAA-compliant plastic components for interior, structural, and systems applications.',
@@ -47,12 +70,13 @@
 
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 			{#each INDUSTRIES as industry}
-				<div
-					class="bg-white border border-gray-200 rounded-sm p-5 hover:border-brand-yellow transition-colors duration-200"
-				>
-					<div class="text-3xl mb-3" aria-hidden="true">{industry.icon}</div>
-					<h2 class="text-white font-semibold mb-2 text-sm">{industry.name}</h2>
-					<p class="text-brand-muted text-xs leading-relaxed">
+				{@const Icon = industryIcons[industry.name] ?? Factory}
+				<div class="border-t-2 border-brand-yellow rounded-sm p-5 transition-colors duration-200 group" style="background: linear-gradient(135deg, #2a3f54 0%, #0d1b2a 100%)">
+					<div class="mb-3 text-brand-yellow" aria-hidden="true">
+						<Icon size={22} />
+					</div>
+					<h2 class="text-white font-semibold mb-2 text-sm tracking-wide">{industry.name}</h2>
+					<p class="text-white/50 text-xs leading-relaxed">
 						{industryDetails[industry.name] ?? 'Precision plastic parts for demanding applications.'}
 					</p>
 				</div>
