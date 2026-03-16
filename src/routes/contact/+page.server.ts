@@ -26,8 +26,7 @@ export const actions: Actions = {
 			});
 		}
 
-		// In production, send email here via nodemailer, Resend, SendGrid, etc.
-		// For now, we just return success.
+		// TODO: send email via Resend
 		console.log('Contact form submission:', { firstName, lastName, email, subject, message });
 
 		return { success: true };

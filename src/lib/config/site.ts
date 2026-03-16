@@ -2,8 +2,8 @@ export const SITE = {
 	name: 'Techni-Mold & Engineering, Inc.',
 	shortName: 'Techni-Mold',
 	baseUrl: 'https://www.techni-mold.com',
-	phone: '(310) 323-7758',
-	phoneTel: '+13103237758',
+	phone: '(310) 323-7710',
+	phoneTel: '+13103237710',
 	fax: '(310) 323-6793',
 	email: 'info@techni-mold.com',
 	address: {
